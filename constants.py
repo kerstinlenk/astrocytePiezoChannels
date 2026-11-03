@@ -1,0 +1,2 @@
+FARADAY_CONSTANT = 96485  # [As/mol]
+MOLAR_GAS_CONSTANT = 8.314  # [J/(K*mol)]
