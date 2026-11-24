@@ -40,13 +40,13 @@ def create_piezo1_simulation_protocol(protocol_name: P1ModelIdentifier) -> dict:
 
     ## Glutamate stimuli (same for every model)
     spike_train = 2e-6 * np.ones(samples_total)
-    spike_train[13 * sampling_factor : 25 * sampling_factor] = 1e-3 #[M]
-    spike_train[38 * sampling_factor : 50 * sampling_factor] = 1e-3 #[M]
-    spike_train[63 * sampling_factor : 75 * sampling_factor] = 1e-3 #[M]
-    spike_train[88 * sampling_factor : 100 * sampling_factor] = 1e-3 #[M]
-    spike_train[113 * sampling_factor : 125 * sampling_factor] = 6e-3 #[M]
-    spike_train[138 * sampling_factor : 150 * sampling_factor] = 6e-3 #[M]
-    spike_train[163 * sampling_factor : 175 * sampling_factor] = 6e-3 #[M]
-    spike_train[188 * sampling_factor : 200 * sampling_factor] = 6e-3 #[M]
+    spike_train[13 * sampling_factor : 25 * sampling_factor] = 1e-3 #[mM]
+    spike_train[38 * sampling_factor : 50 * sampling_factor] = 1e-3 #[mM]
+    spike_train[63 * sampling_factor : 75 * sampling_factor] = 1e-3 #[mM]
+    spike_train[88 * sampling_factor : 100 * sampling_factor] = 1e-3 #[mM]
+    spike_train[113 * sampling_factor : 125 * sampling_factor] = 6e-3 #[mM]
+    spike_train[138 * sampling_factor : 150 * sampling_factor] = 6e-3 #[mM]
+    spike_train[163 * sampling_factor : 175 * sampling_factor] = 6e-3 #[mM]
+    spike_train[188 * sampling_factor : 200 * sampling_factor] = 6e-3 #[mM]
 
     return {"spike_train": spike_train, "mech_stimuli": piezo_signal}

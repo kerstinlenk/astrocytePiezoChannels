@@ -301,7 +301,7 @@ def main(rerun):
         }
     }
     
-    glut_labels = ['[Glu] = 0.001 M', '[Glu] = 0.006', '[Glu] = 0 M']
+    glut_labels = ['[glu] = 1 µM', '[glu] = 6 µM', '[glu] = 0.002 µM']
 
     for model in model_output_paths.keys():
         # Loop through every model, except the dummy model

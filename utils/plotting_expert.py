@@ -126,11 +126,11 @@ def plot_piezo_current_peaks(t1, ipz, t2, mech, glut, ipz_label, ipz_limits, mec
     # Glutamate states as background shading
     ax1.fill_between(t2, 0, 1, where=np.isclose(glut, 0.001, atol=1e-4),
                      color='lightgray', alpha=0.3, transform=ax1.get_xaxis_transform(),
-                     label='[glu] = 0.001 M')
+                     label='[glu] = 1 µM')
 
     ax1.fill_between(t2, 0, 1, where=np.isclose(glut, 0.006, atol=1e-4),
                      color='gray', alpha=0.4, transform=ax1.get_xaxis_transform(),
-                     label='[glu] = 0.006 M')
+                     label='[glu] = 6 µM')
 
     # Legend and Formatting (4 items in a 2x2 grid below the plot)
     lines_1, labels_1 = ax1.get_legend_handles_labels()
